@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: white;
+    color: black;
+}
+
+.download {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid purple;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+    color: purple;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download:hover {
+    background-color: purple;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.circle-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.circle-text {
+    padding: 10px;
+    border: 2px solid purple;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.content {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid purple;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.section {
+    width: 30%;
+    height: 200px;
+    border: 2px solid purple;
+    text-align: center;
+    line-height: 200px;
+    background-color: white;
+    color: purple;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.section:hover {
+    background-color: purple;
+    color: white;
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
