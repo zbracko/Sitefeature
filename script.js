@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         // Stop the spin and start typing
         circle.style.animation = '';
-        typeText("Hello, welcome!", circleText);
+        typeText("Welcome to TalentVyne!", circleText);
     }, 1000);
 });
 
